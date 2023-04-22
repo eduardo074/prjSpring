@@ -1,0 +1,7 @@
+{
+  "name": "prjSpring",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "mvn spring-boot:run"
+  }
+}
