@@ -18,6 +18,7 @@ public class AlunoController {
     @Autowired
     private IAlunoFacade alunoFacade;
 
+//    Retornar todos os alunos no meu banco de dados para meu front-end
     @GetMapping("/alunos")
     @ResponseBody
     public List<Aluno> getAlunos(){
@@ -25,6 +26,7 @@ public class AlunoController {
     }
 
 
+//    Salvar um aluno do front-end no bnaco de dados
     @PostMapping
     public RedirectView savarDados(@ModelAttribute  Aluno aluno){
         alunoFacade.cadastraNovoAluno(aluno);

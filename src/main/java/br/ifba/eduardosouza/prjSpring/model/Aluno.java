@@ -1,6 +1,7 @@
 package br.ifba.eduardosouza.prjSpring.model;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -16,6 +17,8 @@ public class Aluno extends AbstractEntity{
     private String email;
     private String phone;
     private String senha;
+
+    @Column(unique = true)
     private String matricula;
 
     public Aluno() {

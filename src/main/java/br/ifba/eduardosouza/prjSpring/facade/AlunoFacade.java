@@ -2,6 +2,7 @@ package br.ifba.eduardosouza.prjSpring.facade;
 
 import br.ifba.eduardosouza.prjSpring.model.Aluno;
 import br.ifba.eduardosouza.prjSpring.service.AlunoService;
+import br.ifba.eduardosouza.prjSpring.service.IAlunoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ public class AlunoFacade implements IAlunoFacade{
 
 
     @Autowired
-    private AlunoService alunoService;
+    private IAlunoService alunoService;
 
     @Override
     public boolean verificarCampos(Aluno aluno) {
