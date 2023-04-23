@@ -4,11 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{css/login_user.css}">
-
+    <link rel="stylesheet"  th:href="@{css/login_user.css}">
     <title>Cadastrar</title>
 </head>
 <body>
-<h1>Cadastrar-se</h1>
+<main>
+    <div class="conteinerLogin">
+
+        <div class="conteinerImg">
+            <img class="imgPerfil" src="/images/undraw_About_us_page_re_2jfm 1.svg" alt="">
+        </div>
+
+        <div class="conteudoLogin">
+            <div class="loginAuto">
+                <div class="text">
+                    <p>Bem vindo de volta</p>
+                    <h1>Faça login na sua conta</h1>
+                </div>
+
+                <form action="" method="post">
+
+                    <label>
+                        Full name
+                        <input class="input_login input_cadastro" type="text" name="full_name" id="full_name" required>
+                    </label>
+                    <br>
+
+                    <label>
+                        E-mail
+                        <input class="input_login input_cadastro" type="email" name="email" id="email" required>
+                    </label>
+
+                    <label>
+                        Address
+                        <input class="input_login input_cadastro" type="text" name="address" id="address" required>
+                    </label>
+
+                    <label>
+                        Password
+                        <input class="input_login input_cadastro" type="password" name="password" id="password" required>
+                    </label>
+
+<!--                    <div class="acoes">-->
+<!--                        <div class="check_login">-->
+<!--                            <label>-->
+<!--                                Male-->
+<!--                                <input id="male" type="radio" name="gender" value="male" required>-->
+<!--                            </label>-->
+
+<!--                            <label>-->
+<!--                                Female-->
+<!--                                <input type="radio" name="gender" value="female" required>-->
+<!--                            </label>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                    <div class="cadastrar ca">
+                        <a href="#" target="_blank">
+                            <button id="btn_2" type="submit">Cadastrar</button>
+                        </a>
+                    </div>
+                    <div class="cadastre_link">
+                        <p>Já tem uma conta? <a href="/login">Login</a></p>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+<script src="/js/script.js"></script>
 </body>
 </html>

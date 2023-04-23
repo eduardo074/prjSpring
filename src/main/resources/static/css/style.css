@@ -93,7 +93,7 @@ header ul #perfil_user img{
 }
 .logo{
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: var(--colorPadrao);
 }
 .logo a img{
@@ -111,7 +111,7 @@ header ul #perfil_user img{
 .menuBar ul{
     display: flex;
     flex-direction: column;
-    
+
 }
 .menuBar ul li{
     width: 100%;
@@ -140,21 +140,23 @@ header ul #perfil_user img{
     padding: 30px 0 30px 35px;
     font-size: 18px;
 }
-.menuBar ul li a .fa-solid{
+.menuBar nav{
+    margin: 20px 0px;
+}
+.menuBar hr{
+   border: 1px solid #7c7c7c3d;
+}
+/* .menuBar ul li a .fa-solid{
     font-size: 25px;
+} */
+.menuBar ul li {
+    font-size: 16px;
 }
 .menuBar ul span{
     padding-left: 20px;
 }
-.menuBar ul li #span_perfil{
-    padding-left: 29px;
-}
-#span_anali{
-    padding-left: 29px;
-}
-#span_config{
-    padding-left: 23px;
-}
+
+
 /* Fim Menu*/
 
 /* conteiner_user_management */
