@@ -19,15 +19,4 @@ public class User extends AbstractEntity{
     private String password;
     private String address;
     private boolean active;
-    public User() {
-
-    }
-
-    public User(String full_name, String email, String password, String address, boolean active) {
-        this.full_name = full_name;
-        this.email = email;
-        this.password = password;
-        this.address = address;
-        this.active = active;
-    }
 }
