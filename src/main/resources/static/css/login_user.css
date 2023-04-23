@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.conteinerImg{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    height: 600px;
+}
+.imgPerfil{
+    margin: 100px 0px ;
+}
+.conteinerLogin{
+    display: flex;
+    max-width: 1440px;
+    width: 90%;
+    height: 99vh;
+    margin: auto; 
+}
+.conteudoLogin{
+    width: 50%;
+    margin: auto;
+}
+.loginAuto{
+    max-width: 400px;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
+
+/* login */
+.loginAuto .text {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 45px 0;
+}
+.loginAuto .text p, h1{
+    font-family: 'Merriweather', serif;
+    color: #1A202C;
+    margin: 2px;
+}
+.loginAuto .text p{
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+.loginAuto .text h1{
+    font-weight: 700;
+    font-size: 26px;
+}
+form label{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1A202C;
+    margin-bottom: 11px;
+}
+form .input_login, .acoes{
+    max-width: 350px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E8E8E8;
+}
+input{
+    padding-left: 10px;
+}
+form .acoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+form .acoes .check_login {
+    display: flex;
+}
+form .acoes .check_login > p{
+    margin: 0px;
+    padding: 0 10px;
+}
+button{
+    max-width: 347px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+#btn_1{
+    background-color: #39c4de;
+}
+#btn_2{
+    margin-top: 15px;
+    background-color: #1A202C;
+}
+.cadastre_link{
+    position: absolute;
+    bottom: 3%;
+    right: 20%;
+}
+.icone_g{
+  padding-right: 10px;
+  display: inline-block;
+}
+
+
+@media(max-width:970px){
+    .conteinerImg{
+        display: none;
+    }
+    .conteinerLogin {
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+    .conteudoLogin{
+        width: 100%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{css/login_user.css}">
+
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="conteinerLogin">
+            
+            <div class="conteinerImg">
+                <img class="imgPerfil" src="/images/undraw_About_us_page_re_2jfm 1.svg" alt="">
+            </div>
+
+            <div class="conteudoLogin">
+                <div class="loginAuto">
+                    <div class="text">
+                        <p>Bem vindo de volta</p>
+<!--                        <p th:text="${msg}"></p>-->
+                        <h1>Faça login na sua conta</h1>
+                    </div>
+
+                    <form action="dashboard.html" method="get">
+
+                        <label>
+                            E-mail:
+                            <input class="input_login" type="email" name="email" id="email">
+                        </label>
+
+
+                        <label>
+                            Senha:
+                            <input class="input_login" type="password" name="senha" id="password">
+                        </label>
+
+                        <div class="acoes">
+                            <div class="check_login">
+                                <label>
+                                    <input type="checkbox" id="checkbox" name="checkbox"> 
+                                    Lembre de mim 
+                                </label>
+                                
+                            </div>
+
+                            <a href="#">Esqueceu sua senha? </a>
+                        </div>
+
+                        
+                        <button type="submit" id="btn_1" >Entrar</button>
+                    
+                        
+
+                        <div class="cadastrar">
+                            <a href="#" target="_blank">
+                                <button id="btn_2"> <img class="icone_g" src="/images/iconfinder_Google_1298745 1.svg" alt="Icone do goolge">Ou faça login com o Google  </button>
+                            </a>
+                        </div>
+                        
+                        
+                        <div class="cadastre_link">
+                            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>

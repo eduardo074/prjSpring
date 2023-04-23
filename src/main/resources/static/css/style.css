@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --colorPadrao: #39c4de;
+    --colorSecondary: #323645;
+    --fontMain: 'Inter', sans-serif;
+    --fontSecondary: 'Lexend Deca', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontMain);
+}
+
+body{
+   background-color: #efefef;
+   height: 100vh;
+   position: relative;
+}
+
+/* Header */
+header{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.iconeHamburge{
+    cursor: pointer;
+}
+header
+ul,
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+header ul #notificacao{
+    padding-right: 25px;
+}
+header ul #nome_user{
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 50px;   
+    padding-left: 10px;
+    margin-bottom: -10px;
+}
+    
+header ul #perfil_user img{
+    width: 35px;
+    height: 35px;
+}
+
+#notificacao{
+    position: relative;
+}
+
+.caixa_notificacao{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    position: absolute;
+    top: 37px;
+    left: -64px;
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.405);
+    display: none;
+    z-index: 1000;
+}
+
+
+/* Fim header */
+
+/* Menu */
+.conteinerMenu{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contentMenu{
+    width: 100%;
+}
+.menuHamb{
+    display: none;
+    background-color:var(--colorSecondary);
+    width: 300px;
+    /* height: 100vh; */
+}
+.logo{
+    width: 100%;
+    height: 50px;
+    background-color: var(--colorPadrao);
+}
+.logo a img{
+    display: block;
+    width: 125px;
+    margin: auto;
+    padding-top: 10px;
+}
+.menuBar{
+    /* padding: 30px; */
+    color: #797c92;
+    font-weight: 500;
+    height: 100vh;
+}
+.menuBar ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.menuBar ul li{
+    width: 100%;
+}
+.menuBar ul li:hover{
+    background-color: #262931;
+}
+.menuBar a:hover{
+    color: var(--colorPadrao);
+}
+.menuBar a{
+    width: 100%;
+    padding-left: 30px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #797c92;
+    font-family: var(--fontSecondary);
+    display: flex;
+    align-items: center;
+}
+.menuBar a img{
+    padding-right: 25px;
+}
+.menuBar .name_area{
+    display: block;
+    padding: 30px 0 30px 35px;
+    font-size: 18px;
+}
+.menuBar ul li a .fa-solid{
+    font-size: 25px;
+}
+.menuBar ul span{
+    padding-left: 20px;
+}
+.menuBar ul li #span_perfil{
+    padding-left: 29px;
+}
+#span_anali{
+    padding-left: 29px;
+}
+#span_config{
+    padding-left: 23px;
+}
+/* Fim Menu*/
+
+/* conteiner_user_management */
+.conteiner_user_management{
+    width: 100%;
+    padding: 20px;
+    height: 120px;
+    background-color: white;
+    
+}
+.conteiner_user_management .content_user_management{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteiner_user_management .text_management h1{
+    font-family: var(--fontSecondary);
+    /* background-color: red; */
+}
+.conteiner_user_management .text_management p{
+    font-family: var(--fontSecondary);
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.box_btn_addUser button{
+    width: 125px;
+    height: 36px;
+    background-color: var(--colorPadrao);
+    border: none;
+    font-family: var(--fontSecondary);
+    color: white;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.box_btn_addUser button:hover{
+    background-color: #39c5ded7;
+}
+.bnt_section button{
+    cursor: pointer;
+    width: 65px;
+    font-family: var(--fontSecondary);
+    border: none;
+    border-bottom: 2px solid var(--colorPadrao);
+    background:none;
+    margin-right: 10px;
+}
+/* Fim conteiner_user_management */
+main{
+
+    margin-top: 4px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+
+
+
+

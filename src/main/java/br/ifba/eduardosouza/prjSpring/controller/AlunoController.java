@@ -30,6 +30,6 @@ public class AlunoController {
     @PostMapping
     public RedirectView savarDados(@ModelAttribute  Aluno aluno){
         alunoFacade.cadastraNovoAluno(aluno);
-        return new RedirectView("http://127.0.0.1:5500/index.html");
+        return new RedirectView("http://127.0.0.1:5500/dashboard.html");
     }
 }

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --colorPadrao: #39c4de;
+    --colorSecondary: #323645;
+    --fontMain: 'Inter', sans-serif;
+    --fontSecondary: 'Lexend Deca', sans-serif;
+}
+
+#table_model{
+    padding: 20px;
+    margin-top: 30px;
+    background-color: white;
+}
+table {
+    
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: white;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+    font-size: 16px;
+    text-align: left;
+}
+tr th{
+    font-family: var(--fontSecondary);
+    font-size: 14px;
+    border: none;
+    height: 50px;
+    color: #3a3a3a;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+td{
+    height: 80px;
+    border: none;
+    border-top: 1px solid #3a3a3a18;
+    border-bottom: 1px solid #3a3a3a18;
+    cursor: pointer;
+    font-family: var(--fontSecondary);
+    color: #9a9a9a;
+    text-align: center;
+
+}
+tr:hover {
+    background-color: #e7fbff;
+}
+
+th {
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.boxImg{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: auto;
+}
+.boxImg img{
+    width: 100%;
+    height: inherit;
+    border-radius:inherit;
+    object-fit: cover;
+}
+
+.boxAcoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btns_acao button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.fa-user-pen{
+    /* color: red; */
+}
+
+  
