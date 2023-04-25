@@ -8,5 +8,8 @@ public interface IUserService {
     boolean saveUser(User user);
 
     //Buscar um user pelo email e senha
-    boolean findByEmailPassword(User user);
+    User findByEmailAndPassword(User user);
+
+    //Dados do user logado
+    public abstract User userLogado();
 }

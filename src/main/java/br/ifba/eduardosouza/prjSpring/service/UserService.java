@@ -26,8 +26,22 @@ public class UserService implements IUserService{
         }
     }
 
+
+    //Verificação para o login
     @Override
-    public boolean findByEmailPassword(User user) {
-        return false;
+    public User findByEmailAndPassword(User user) {
+        //Vou pegar o usuário que quer fazer login e verificar se o email e senha exitem no banco de dados
+        User userLogin = userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword());
+        //
+        userLogado().setFull_name(userLogin.getFull_name());
+        if(userLogin == null)
+            return userLogin;
+        return userLogin;
+    }
+
+    @Override
+    public User userLogado() {
+        User user = new User();
+        return user;
     }
 }

@@ -14,28 +14,24 @@ import javax.validation.constraints.Size;
 @Data
 @Table(name="Users")
 public class User extends AbstractEntity{
-    private final String MASSAGE_ERRO_CAMPO = "Campo não informado";
-    private final String MASSAGE_ERRO_CAMPO_INVALIDO = "Campo inválido";
-    private final String MASSAGE_ERRO_CAMPO_TAMANHO = "Min 5, max 255 caracteres";
 
     @Column(nullable = false)
-    @NotBlank(message = MASSAGE_ERRO_CAMPO)
-    @Size(min = 5, max = 255, message = MASSAGE_ERRO_CAMPO_TAMANHO)
+    @NotBlank()
+    @Size(min = 5, max = 255)
     private String full_name;
 
     @Column(unique = true, nullable = false)
-    @Email(message = MASSAGE_ERRO_CAMPO_INVALIDO)
-    @Size(min = 5, max = 255, message = MASSAGE_ERRO_CAMPO_TAMANHO)
-    @NotBlank(message = MASSAGE_ERRO_CAMPO)
+    @Email
+    @NotBlank
     private String email;
 
-    @Size(min = 5, max = 255, message = MASSAGE_ERRO_CAMPO_TAMANHO)
-    @NotBlank(message = MASSAGE_ERRO_CAMPO)
+    @Size(min = 5, max = 255)
+    @NotBlank()
     private String password;
 
     @Column(nullable = false)
-    @Size(min = 5, max = 255, message = MASSAGE_ERRO_CAMPO_TAMANHO)
-    @NotBlank(message = MASSAGE_ERRO_CAMPO)
+    @Size(min = 5, max = 255)
+    @NotBlank()
     private String address;
 
     private boolean active;

@@ -21,6 +21,7 @@ public class Aluno extends AbstractEntity{
     @NotBlank //a string não pode ser nula e ter espaço vazios
     private String user_name;
     @Size(min = 5, max = 20)
+    @Column(nullable = false)
     @NotBlank
     private String first_name;
     @Size(min = 5, max = 20)
@@ -34,10 +35,8 @@ public class Aluno extends AbstractEntity{
     @Column(nullable = false)
     private String phone;
 
-    @NotBlank
-    @Column(nullable = false)
-    @Size(min = 6, max = 255)
-    private String senha;
+
+    private String password;
 
     @Column(unique = true, nullable = false)
     @NotBlank

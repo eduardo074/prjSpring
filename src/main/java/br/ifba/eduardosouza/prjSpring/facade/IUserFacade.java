@@ -7,6 +7,9 @@ public interface IUserFacade {
 
     //Validação de campos
 
+    //Dados do user logado
+    public abstract User userLogado();
+
 
     //------- Repository -------
 
@@ -14,7 +17,7 @@ public interface IUserFacade {
     public abstract boolean saveUser(User user);
 
     //Buscar um user pelo email e senha
-    public abstract boolean findByEmailPassword(User user);
+    public abstract User findByEmailAndPassword(User user);
 
 
 }

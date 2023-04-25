@@ -1,6 +1,7 @@
 package br.ifba.eduardosouza.prjSpring.facade;
 
 import br.ifba.eduardosouza.prjSpring.model.Aluno;
+import br.ifba.eduardosouza.prjSpring.model.User;
 import br.ifba.eduardosouza.prjSpring.service.AlunoService;
 import br.ifba.eduardosouza.prjSpring.service.IAlunoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,8 @@ public class AlunoFacade implements IAlunoFacade{
     public Aluno gerarAluno() {
         return alunoService.gerarAluno();
     }
+
+
 
     @Override
     public List<Aluno> todosOsAlunos() {

@@ -1,6 +1,7 @@
 package br.ifba.eduardosouza.prjSpring.facade;
 
 import br.ifba.eduardosouza.prjSpring.model.Aluno;
+import br.ifba.eduardosouza.prjSpring.model.User;
 
 import java.util.List;
 
@@ -19,6 +20,8 @@ public interface IAlunoFacade {
 
     //Gerar um aluno aleatório para testes
     public abstract Aluno gerarAluno();
+
+
 
 
 

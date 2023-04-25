@@ -32,7 +32,6 @@ public class UserController {
         if(userFacade.saveUser(user)){
             System.out.println("salvou");
             return new RedirectView("/login");
-
         }else{
             return new RedirectView("/cadastrar");
         }
@@ -46,7 +45,7 @@ public class UserController {
     public Map<String, String> handleValidationException(MethodArgumentNotValidException ex){
         Map<String, String> erros =  new HashMap<>();
 
-        //Aqui preciso pegar a exeção e ver as informações dentro dela
+        //Aqui preciso pegar a exceção e ver as informações dentro dela
         ex.getBindingResult().getAllErrors().forEach((error) -> {
             //aqui vou adicionar os erros na minha lista
             String fieldName = ( (FieldError) error).getField();

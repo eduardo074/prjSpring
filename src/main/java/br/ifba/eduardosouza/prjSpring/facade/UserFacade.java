@@ -13,12 +13,17 @@ public class UserFacade implements IUserFacade{
     private IUserService userService;
 
     @Override
+    public User userLogado() {
+        return userService.userLogado();
+    }
+
+    @Override
     public boolean saveUser(User user) {
         return userService.saveUser(user);
     }
 
     @Override
-    public boolean findByEmailPassword(User user) {
-        return userService.findByEmailPassword(user);
+    public User findByEmailAndPassword(User user) {
+        return userService.findByEmailAndPassword(user);
     }
 }
