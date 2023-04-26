@@ -32,4 +32,17 @@ public class AlunoController {
         alunoFacade.cadastraNovoAluno(aluno);
         return new RedirectView("/dashboard");
     }
+
+    //deletar um aluno
+
+
+    @DeleteMapping
+    @ResponseBody
+    public RedirectView deletarAluno(Long id){
+        alunoFacade.removeAluno(id);
+        return new RedirectView("/dashboard");
+    }
+
+
+
 }

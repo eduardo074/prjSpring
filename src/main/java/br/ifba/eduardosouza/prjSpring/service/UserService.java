@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService implements IUserService{
 
+    //User logado
+    private User userLogado;
+
     @Autowired
     private UserRepository userRepository;
 
@@ -32,16 +35,19 @@ public class UserService implements IUserService{
     public User findByEmailAndPassword(User user) {
         //Vou pegar o usuário que quer fazer login e verificar se o email e senha exitem no banco de dados
         User userLogin = userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword());
-        //
-        userLogado().setFull_name(userLogin.getFull_name());
-        if(userLogin == null)
+
+        //O usuário que fez o login
+
+        if(userLogin == null){
+            return null;
+        }else {
+            userLogado = userLogin;
             return userLogin;
-        return userLogin;
+        }
     }
 
     @Override
     public User userLogado() {
-        User user = new User();
-        return user;
+        return userLogado;
     }
 }

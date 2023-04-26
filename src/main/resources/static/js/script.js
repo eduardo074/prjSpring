@@ -70,6 +70,29 @@ fetch('http://localhost:8080/api/alunos')
             </div>
         </td>
       `;
+       tr.querySelector('#btn_remover').addEventListener('click', () => {
+                removerAluno(aluno.id, tr);
+              });
       alunosList.appendChild(tr);
     });
   });
+
+  //Para remover uma aluno
+
+
+
+  function removerAluno(id, linha) {
+    fetch(`http://localhost:8080/api/alunos/${id}`, { method: 'DELETE' })
+      .then(response => {
+        if (response.ok) {
+          linha.remove();
+          console.log('Aluno removido com sucesso!');
+        } else {
+          console.error('Erro ao remover aluno:', response.statusText);
+        }
+      })
+      .catch(error => {
+        console.error('Erro ao remover aluno:', error);
+      });
+  }
+
